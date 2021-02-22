@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
 }
 
-.box {
+.margin-auto {
   margin: 0 auto;
 }
 
@@ -24,6 +24,10 @@ body {
   width: 300px;
   height: 300px;
   position: relative;
+}
+
+.box-red {
+  background: #ff0000;
 }
 
 .margin-change {
@@ -48,12 +52,12 @@ body {
   background: #ff0000;
 }
 
-.float {
+.float-release {
   width: 600px;
   margin: 0 auto;
 }
 
-.float-red, .float-blue {
+.float {
   float: left;
 }
 
@@ -67,6 +71,10 @@ body {
   margin: 0 auto;
 }
 
+.flex-reverse {
+  flex-direction: row;
+}
+
 p {
   position: absolute;
   top: 50%;
@@ -76,20 +84,27 @@ p {
 
 .rime {
   background: #00ff51;
+  order: 1;
 }
 
 .yellow {
   background: #d4ff00;
+  order: 2;
 }
 
 .pink {
   background: #ff00e1;
+  order: 3;
 }
 
 .appear {
   display: flex;
   width: 600px;
   margin: 0 auto;
+}
+
+.red-appear {
+  display: block;
 }
 
 .blue-appear {
@@ -102,7 +117,7 @@ p {
     height: 200px;
   }
 
-  .color-change {
+  .box-red {
     background: #007bff;
   }
 
@@ -110,7 +125,7 @@ p {
     margin-right: 50px;
   }
 
-  .float-red {
+  .float {
     float: none;
   }
 
@@ -118,18 +133,18 @@ p {
     flex-direction: row-reverse;
   }
 
-  .rime:first-child {
+  .rime {
     order: 2;
   }
-  .yellow:nth-child(2) {
+  .yellow {
     order: 3;
   }
-  .pink:last-child {
+  .pink {
     order: 1;
   }
 
   .blue-appear {
-    display: flex;
+    display: block;
   }
 
   .red-appear {
